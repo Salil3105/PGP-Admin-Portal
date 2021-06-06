@@ -1,0 +1,13 @@
+.brandname{
+    cursor: pointer;
+}
+
+.list_item{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.list_item:hover{
+    background-color: #F4F4F9;
+    border-radius: 0 27px 0 27px;
+    color: black
+}
