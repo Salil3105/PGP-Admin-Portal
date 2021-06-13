@@ -24,9 +24,8 @@ function Formheader() {
                 <input type='text' placeholder='Untitled Form' className='form_name' ></input>
                 <IoMdFolderOpen id='folderIcon' className='form_header_icon' style={{marginRight:'10px'}} ></IoMdFolderOpen>
                 {/* <Fistar className='form_header_icon' style={{marginRight:'10px'}} /> */}
-                <Star className='form_header_icon' style={{marginRight:'10px'}} />
-                
-                <span style={{fontSize:'12px', fontWeight:'600'}}>All Changes Saved in Drive</span>
+                {/* <Star className='form_header_icon' style={{marginRight:'10px'}} />
+                <span style={{fontSize:'12px', fontWeight:'600'}}>All Changes Saved in Drive</span> */}
             </div>
 
 
@@ -35,9 +34,9 @@ function Formheader() {
                     <ColorLensIcon size='small' className='form_header_icon' />
                 </IconButton>
 
-                <IconButton>
+                {/* <IconButton>
                     <AiOutlineEye  className='form_header_icon' />
-                </IconButton>
+                </IconButton> */}
 
                 <IconButton>
                     <Setting  className='form_header_icon' />

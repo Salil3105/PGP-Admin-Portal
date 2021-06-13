@@ -4,13 +4,14 @@ import uuid from 'react-uuid'
 import {useHistory} from 'react-router-dom';
 import axios from 'axios'
 
-function Login(){
+function Login() {
 
     const [data, setData] = useState({
         userEmailId: 'mvshinde640@gmail.com',
         password: 'newPassword',
         admin: false
     })
+
     console.log(data);
     const textEmailChange = (email) => {
         setData({
@@ -18,7 +19,6 @@ function Login(){
         userEmailId: email.nativeEvent.data
         })
         console.log(data);
-        
     }
     
     const textPassChange = (pass) => {
@@ -27,12 +27,12 @@ function Login(){
         password: pass
         })
         console.log(data);
-        
     }
+
     const history = useHistory()
-    const check = ()=> 
+    const check = () => 
     {
-        console.log('Entered Inside the Check Function Succesfully');
+        // console.log('Entered Inside the Check Function Succesfully');
         const id = uuid();
         console.log(id);
         history.push('/login/:'+ id);
@@ -74,8 +74,6 @@ function Login(){
 }
 
 export default Login;
-
-
 
 
 

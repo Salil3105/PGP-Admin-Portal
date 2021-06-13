@@ -3,7 +3,8 @@ import '../components/mainBody.css';
 import StorageIcon from '@material-ui/icons/Storage';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import FolderOpenIcon from '@material-ui/icons/FolderOpen';
-import { IconButton } from '@material-ui/core'
+import { IconButton } from '@material-ui/core';
+
 function mainBody() {
     return(
         <div className='mainbody'>

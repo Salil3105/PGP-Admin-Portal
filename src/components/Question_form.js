@@ -389,15 +389,16 @@ function questionUI() {
                     className="edit"
                     onClick={addMoreQuestionField}
                 />
-                <OndemandVideoIcon className="edit" />
+                {/* <OndemandVideoIcon className="edit" />
                 <CropOriginalIcon className="edit" />
-                <TextFieldsIcon className="edit" />
+                <TextFieldsIcon className="edit" /> */}
             </div>
         </div>
         </Accordion>
     </div>
     ));
 }
+
 return (
     <div>
         <div className="question_form">

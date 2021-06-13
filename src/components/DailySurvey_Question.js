@@ -369,9 +369,9 @@ function Question_form()
                 className="edit"
                 onClick={addMoreQuestionField}
               />
-              <OndemandVideoIcon className="edit" />
+              {/* <OndemandVideoIcon className="edit" />
               <CropOriginalIcon className="edit" />
-              <TextFieldsIcon className="edit" />
+              <TextFieldsIcon className="edit" /> */}
             </div>
           </div>
         </Accordion>
@@ -412,31 +412,31 @@ function Question_form()
   }
   
   return (
-    <div>
-      <div className="question_form">
-        <br></br>
-        <div className="section">
-          <div className="question_title_section">
-            <div className="question_form_top">
-              <input
-                type="text"
-                className="question_form_top_name"
-                style={{ color: "black" }}
-                placeholder="Untitled Form"
-              ></input>
-              <input
-                type="text"
-                className="question_form_top_desc"
-                style={{ color: "black" }}
-                placeholder= 'Form description'
-              ></input>
+    <>
+        <div className="question_form">
+          <br></br>
+          <div className="section">
+            <div className="question_title_section">
+              <div className="question_form_top">
+                <input
+                  type="text"
+                  className="question_form_top_name"
+                  style={{ color: "black" }}
+                  placeholder="Untitled Form"
+                ></input>
+                <input
+                  type="text"
+                  className="question_form_top_desc"
+                  style={{ color: "black" }}
+                  placeholder= 'Form description'
+                ></input>
+              </div>
             </div>
+            {questionUI()}
+            {/* {getSurveyData()} */}
           </div>
-          {questionUI()}
-          {getSurveyData()}
         </div>
-      </div>
-    </div>
+    </>
   );
 }
 

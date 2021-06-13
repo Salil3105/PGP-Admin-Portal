@@ -4,6 +4,7 @@
     padding-top: 7px;
 }
 .template_top {
+    /* background-color: gray;  */
     margin-left: 160px;
     margin-right: 160px;
     display: flex;
@@ -21,6 +22,7 @@
     background: transparent;
 }
 .template_body{
+    /* background-color: gray;        */
     margin-left: 160px;
     margin-right: 160px;
     display: flex;

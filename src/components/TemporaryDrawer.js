@@ -8,7 +8,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem'; 
 import Divider from '@material-ui/core/Divider';
 
-function TemporaryDrawer() {
+function TemporaryDrawer() 
+{
 
     const [state,setState] = React.useState({
         left: false
@@ -18,7 +19,7 @@ function TemporaryDrawer() {
         setState({...state, [anchor]:open});
     };
 
-    const list = (anchor) =>(
+    const list = (anchor) => (
         <div style={{width:'250px'}} role="presentation">
             {/* <Divider> */}
                 <List>
@@ -40,27 +41,27 @@ function TemporaryDrawer() {
                 
                 <ListItem className='list_item'>
                         <img  src=''/>
-                        <div ><b>Google Docs </b></div>
+                        {/* <div ><b>Google Docs </b></div> */}
                 </ListItem>
 
                 <ListItem className='list_item'>
                         <img  src=''/>
-                        <div><b>Google Sheet</b></div>
+                        {/* <div><b>Google Sheet</b></div> */}
                 </ListItem>
             </List>
         </div>
     )
     return(
-        <div>
-            <React.Fragment>
+        <>
+            <>
                 <IconButton onClick={toggleDrawer("left",true)}>
                     <MenuIcon />
                 </IconButton>
                 <Drawer open={state['left']} onClose={toggleDrawer("left",false)} anchor='left'>
                     {list('left')}
                 </Drawer>
-            </React.Fragment>
-        </div>
+            </>
+        </>
     )
 }
 

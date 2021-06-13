@@ -29,11 +29,11 @@ function Header() {
             </div>
 
             <div className='header_right'>
-                <IconButton>
+                {/* <IconButton>
                     <AppIcon />    
-                </IconButton>
+                </IconButton> */}
                 <IconButton>
-                    <Avatar src="" />
+                    <Avatar  />
                 </IconButton>
             </div>
 
